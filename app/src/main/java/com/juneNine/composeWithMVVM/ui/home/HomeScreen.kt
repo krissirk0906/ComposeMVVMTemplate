@@ -12,11 +12,12 @@ import androidx.compose.ui.graphics.Color
 import androidx.compose.ui.text.style.TextAlign
 import androidx.compose.ui.unit.dp
 import androidx.compose.ui.unit.sp
+import androidx.navigation.NavController
 import com.juneNine.composeWithMVVM.ui.theme.AppTheme
 import com.juneNine.composeWithMVVM.ui.weather_card.WeatherCard
 
 @Composable
-fun HomeScreen() {
+fun HomeScreen(navController: NavController) {
     AppTheme() {
         Column(
             modifier = Modifier
@@ -26,7 +27,6 @@ fun HomeScreen() {
             Text(text = "Home Screen", modifier = Modifier
                 .fillMaxWidth()
                 .padding(top = 25.dp), textAlign = TextAlign.Center, fontSize = 20.sp)
-            WeatherCard()
         }
     }
 }
