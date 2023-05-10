@@ -1,4 +1,4 @@
-package com.junenine.composeWithMVVM.ui.components.main
+package com.junenine.mvvmcompose.ui.components.main
 
 import androidx.compose.foundation.layout.Box
 import androidx.compose.foundation.layout.padding
@@ -7,9 +7,9 @@ import androidx.compose.runtime.Composable
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.res.colorResource
 import androidx.navigation.compose.rememberNavController
-import com.junenine.composeWithMVVM.R
-import com.junenine.composeWithMVVM.ui.base.BottomNavigationBar
-import com.junenine.composeWithMVVM.ui.components.navigation.HomeNav
+import com.junenine.mvvmcompose.R
+import com.junenine.mvvmcompose.ui.base.BottomNavigationBar
+import com.junenine.mvvmcompose.ui.components.navigation.HomeNav
 
 @Composable
 fun MainScreen() {

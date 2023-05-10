@@ -1,4 +1,4 @@
-package com.junenine.composeWithMVVM.data.model
+package com.junenine.mvvmcompose.data.model
 
 import android.content.Context
 import androidx.annotation.StringRes

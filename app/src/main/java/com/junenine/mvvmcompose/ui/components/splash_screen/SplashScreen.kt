@@ -1,4 +1,4 @@
-package com.junenine.composeWithMVVM.ui.components.splash_screen
+package com.junenine.mvvmcompose.ui.components.splash_screen
 
 import androidx.compose.foundation.background
 import androidx.compose.foundation.layout.*
@@ -13,7 +13,8 @@ import com.airbnb.lottie.compose.LottieAnimation
 import com.airbnb.lottie.compose.LottieCompositionSpec
 import com.airbnb.lottie.compose.animateLottieCompositionAsState
 import com.airbnb.lottie.compose.rememberLottieComposition
-import com.junenine.composeWithMVVM.ui.components.navigation.Screen
+import com.junenine.mvvmcompose.ui.components.navigation.Screen
+import com.junenine.mvvmcompose.R
 
 @Composable
 fun SplashScreen(navController: NavHostController) {

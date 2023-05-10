@@ -1,4 +1,4 @@
-package com.junenine.composeWithMVVM.ui.base
+package com.junenine.mvvmcompose.ui.base
 
 import androidx.compose.foundation.layout.size
 import androidx.compose.material.BottomNavigation
@@ -14,8 +14,8 @@ import androidx.compose.ui.tooling.preview.Preview
 import androidx.compose.ui.unit.dp
 import androidx.navigation.NavController
 import androidx.navigation.compose.currentBackStackEntryAsState
-import com.junenine.composeWithMVVM.R
-import com.junenine.composeWithMVVM.ui.components.navigation.Screen
+import com.junenine.mvvmcompose.R
+import com.junenine.mvvmcompose.ui.components.navigation.Screen
 
 @Composable
 fun BottomNavigationBar(navController: NavController) {

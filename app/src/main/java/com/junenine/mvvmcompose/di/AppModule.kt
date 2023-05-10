@@ -1,10 +1,10 @@
-package com.junenine.composeWithMVVM.di
+package com.junenine.mvvmcompose.di
 
 import android.app.Application
-import com.junenine.composeWithMVVM.domain.repository.MyRepository
-import com.junenine.composeWithMVVM.domain.repository.MyRepositoryImplement
-import com.junenine.composeWithMVVM.domain.repository.UserRepository
-import com.junenine.composeWithMVVM.domain.repository.UserRepositoryImplement
+import com.junenine.mvvmcompose.domain.repository.MyRepository
+import com.junenine.mvvmcompose.domain.repository.MyRepositoryImplement
+import com.junenine.mvvmcompose.domain.repository.UserRepository
+import com.junenine.mvvmcompose.domain.repository.UserRepositoryImplement
 import dagger.Module
 import dagger.Provides
 import dagger.hilt.InstallIn

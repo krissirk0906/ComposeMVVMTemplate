@@ -1,8 +1,8 @@
-package com.junenine.composeWithMVVM.di
+package com.junenine.mvvmcompose.di
 
-import com.junenine.composeWithMVVM.data.model.MathResponse
-import com.junenine.composeWithMVVM.data.model.SampleResponse
-import com.junenine.composeWithMVVM.data.model.Weather
+import com.junenine.mvvmcompose.data.model.MathResponse
+import com.junenine.mvvmcompose.data.model.SampleResponse
+import com.junenine.mvvmcompose.data.model.Weather
 import retrofit2.Response
 import retrofit2.http.GET
 import retrofit2.http.Query

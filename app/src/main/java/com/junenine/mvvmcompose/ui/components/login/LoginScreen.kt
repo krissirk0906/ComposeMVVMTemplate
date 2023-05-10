@@ -1,4 +1,4 @@
-package com.junenine.composeWithMVVM.ui.components.login
+package com.junenine.mvvmcompose.ui.components.login
 
 import androidx.compose.foundation.Image
 import androidx.compose.foundation.background
@@ -20,9 +20,9 @@ import androidx.compose.ui.text.input.KeyboardType
 import androidx.compose.ui.text.style.TextAlign
 import androidx.compose.ui.unit.dp
 import androidx.hilt.navigation.compose.hiltViewModel
-import com.junenine.composeWithMVVM.R
-import com.junenine.composeWithMVVM.ui.base.BasePopup
-import com.junenine.composeWithMVVM.ui.base.CustomTextFieldApp
+import com.junenine.mvvmcompose.R
+import com.junenine.mvvmcompose.ui.base.BasePopup
+import com.junenine.mvvmcompose.ui.base.CustomTextFieldApp
 
 @OptIn(ExperimentalMaterial3Api::class)
 @Composable

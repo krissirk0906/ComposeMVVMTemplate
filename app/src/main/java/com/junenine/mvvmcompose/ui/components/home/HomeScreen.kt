@@ -1,4 +1,4 @@
-package com.junenine.composeWithMVVM.ui.components.home
+package com.junenine.mvvmcompose.ui.components.home
 
 import androidx.compose.foundation.background
 import androidx.compose.foundation.layout.Column
@@ -20,7 +20,7 @@ import androidx.compose.ui.text.style.TextAlign
 import androidx.compose.ui.unit.dp
 import androidx.compose.ui.unit.sp
 import androidx.navigation.NavController
-import com.junenine.composeWithMVVM.ui.theme.AppTheme
+import com.junenine.mvvmcompose.ui.theme.AppTheme
 
 @Composable
 fun HomeScreen(navController: NavController) {

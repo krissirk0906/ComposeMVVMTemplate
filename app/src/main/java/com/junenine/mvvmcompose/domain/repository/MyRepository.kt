@@ -1,7 +1,7 @@
-package com.junenine.composeWithMVVM.domain.repository
+package com.junenine.mvvmcompose.domain.repository
 
-import com.junenine.composeWithMVVM.data.model.SampleResponse
-import com.junenine.composeWithMVVM.data.model.Weather
+import com.junenine.mvvmcompose.data.model.SampleResponse
+import com.junenine.mvvmcompose.data.model.Weather
 
 interface MyRepository {
     suspend fun myNetworkCall() : SampleResponse?

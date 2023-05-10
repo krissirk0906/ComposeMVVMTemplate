@@ -1,11 +1,11 @@
-package com.junenine.composeWithMVVM.ui.components.navigation
+package com.junenine.mvvmcompose.ui.components.navigation
 
 import androidx.compose.runtime.Composable
 import androidx.navigation.NavHostController
 import androidx.navigation.compose.NavHost
 import androidx.navigation.compose.composable
-import com.junenine.composeWithMVVM.ui.components.main.MainScreen
-import com.junenine.composeWithMVVM.ui.components.splash_screen.SplashScreen
+import com.junenine.mvvmcompose.ui.components.main.MainScreen
+import com.junenine.mvvmcompose.ui.components.splash_screen.SplashScreen
 
 @Composable
 fun MainNav(navController: NavHostController) {

@@ -1,4 +1,4 @@
-package com.junenine.composeWithMVVM.ui.components.weather_card
+package com.junenine.mvvmcompose.ui.components.weather_card
 
 import androidx.compose.foundation.background
 import androidx.compose.foundation.layout.*

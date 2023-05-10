@@ -1,13 +1,13 @@
-package com.junenine.composeWithMVVM.ui.components.login
+package com.junenine.mvvmcompose.ui.components.login
 
 import androidx.compose.runtime.getValue
 import androidx.compose.runtime.mutableStateOf
 import androidx.compose.runtime.setValue
 import androidx.lifecycle.ViewModel
-import com.junenine.composeWithMVVM.data.model.PopupModel
-import com.junenine.composeWithMVVM.data.model.UiText
-import com.junenine.composeWithMVVM.domain.use_case.ValidateEmailUseCase
-import com.junenine.composeWithMVVM.domain.use_case.ValidatePasswordUseCase
+import com.junenine.mvvmcompose.data.model.PopupModel
+import com.junenine.mvvmcompose.data.model.UiText
+import com.junenine.mvvmcompose.domain.use_case.ValidateEmailUseCase
+import com.junenine.mvvmcompose.domain.use_case.ValidatePasswordUseCase
 
 class MainViewModel : ViewModel() {
 

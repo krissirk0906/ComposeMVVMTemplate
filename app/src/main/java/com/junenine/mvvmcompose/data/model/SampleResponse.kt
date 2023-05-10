@@ -1,4 +1,4 @@
-package com.junenine.composeWithMVVM.data.model
+package com.junenine.mvvmcompose.data.model
 
 data class SampleResponse (
     val _id: String? = null,

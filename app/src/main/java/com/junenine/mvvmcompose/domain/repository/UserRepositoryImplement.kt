@@ -1,8 +1,8 @@
-package com.junenine.composeWithMVVM.domain.repository
+package com.junenine.mvvmcompose.domain.repository
 
 import android.app.Application
-import com.junenine.composeWithMVVM.data.model.MathResponse
-import com.junenine.composeWithMVVM.di.MyApi
+import com.junenine.mvvmcompose.data.model.MathResponse
+import com.junenine.mvvmcompose.di.MyApi
 import javax.inject.Inject
 
 class UserRepositoryImplement @Inject constructor(private val api: MyApi, app: Application) :

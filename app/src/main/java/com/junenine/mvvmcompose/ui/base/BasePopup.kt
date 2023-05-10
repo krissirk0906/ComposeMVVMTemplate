@@ -1,4 +1,4 @@
-package com.junenine.composeWithMVVM.ui.base
+package com.junenine.mvvmcompose.ui.base
 
 import androidx.compose.foundation.Image
 import androidx.compose.foundation.background
@@ -16,8 +16,8 @@ import androidx.compose.ui.text.style.TextAlign
 import androidx.compose.ui.unit.dp
 import androidx.compose.ui.unit.sp
 import androidx.compose.ui.window.Dialog
-import com.junenine.composeWithMVVM.R
-import com.junenine.composeWithMVVM.data.model.PopupModel
+import com.junenine.mvvmcompose.R
+import com.junenine.mvvmcompose.data.model.PopupModel
 
 @Composable
 fun BasePopup(popupModel: PopupModel,onAgree : () -> Unit, onDismiss: () -> Unit) {

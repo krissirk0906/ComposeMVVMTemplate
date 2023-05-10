@@ -1,10 +1,10 @@
-package com.junenine.composeWithMVVM.domain.repository
+package com.junenine.mvvmcompose.domain.repository
 
 import android.app.Application
-import com.junenine.composeWithMVVM.R
-import com.junenine.composeWithMVVM.data.model.SampleResponse
-import com.junenine.composeWithMVVM.data.model.Weather
-import com.junenine.composeWithMVVM.di.MyApi
+import com.junenine.mvvmcompose.R
+import com.junenine.mvvmcompose.data.model.SampleResponse
+import com.junenine.mvvmcompose.data.model.Weather
+import com.junenine.mvvmcompose.di.MyApi
 import javax.inject.Inject
 
 class MyRepositoryImplement @Inject constructor(private val api: MyApi, private val app: Application) :

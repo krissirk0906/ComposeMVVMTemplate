@@ -1,4 +1,4 @@
-package com.junenine.composeWithMVVM.ui.base
+package com.junenine.mvvmcompose.ui.base
 
 import androidx.compose.foundation.background
 import androidx.compose.foundation.border
@@ -25,8 +25,8 @@ import androidx.compose.ui.text.input.KeyboardType
 import androidx.compose.ui.text.input.PasswordVisualTransformation
 import androidx.compose.ui.text.input.VisualTransformation
 import androidx.compose.ui.unit.dp
-import com.junenine.composeWithMVVM.data.model.UiText
-import com.junenine.composeWithMVVM.utils.ValidationUtils.isNumber
+import com.junenine.mvvmcompose.data.model.UiText
+import com.junenine.mvvmcompose.utils.ValidationUtils.isNumber
 
 
 @Composable

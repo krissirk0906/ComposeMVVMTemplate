@@ -1,4 +1,4 @@
-package com.junenine.composeWithMVVM.data.repository
+package com.junenine.mvvmcompose.data.repository
 
 class QuoteRepositoryImpl {
 }

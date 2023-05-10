@@ -1,9 +1,9 @@
-package com.junenine.composeWithMVVM.domain.use_case
+package com.junenine.mvvmcompose.domain.use_case
 
-import com.junenine.composeWithMVVM.R
-import com.junenine.composeWithMVVM.data.model.UiText
-import com.junenine.composeWithMVVM.data.model.ValidationResult
-import com.junenine.composeWithMVVM.utils.ValidationUtils.isEmailValid
+import com.junenine.mvvmcompose.R
+import com.junenine.mvvmcompose.data.model.UiText
+import com.junenine.mvvmcompose.data.model.ValidationResult
+import com.junenine.mvvmcompose.utils.ValidationUtils.isEmailValid
 
 class ValidateEmailUseCase: BaseUseCase<String, ValidationResult> {
     override fun execute(input: String): ValidationResult {

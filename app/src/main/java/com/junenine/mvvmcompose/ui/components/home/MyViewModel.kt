@@ -1,4 +1,4 @@
-package com.junenine.composeWithMVVM.ui.components.home
+package com.junenine.mvvmcompose.ui.components.home
 
 import android.util.Log
 import androidx.compose.ui.text.input.TextFieldValue
@@ -6,10 +6,10 @@ import androidx.lifecycle.LiveData
 import androidx.lifecycle.MutableLiveData
 import androidx.lifecycle.ViewModel
 import androidx.lifecycle.viewModelScope
-import com.junenine.composeWithMVVM.data.model.SampleResponse
-import com.junenine.composeWithMVVM.di.MyApi
-import com.junenine.composeWithMVVM.domain.repository.MyRepository
-import com.junenine.composeWithMVVM.domain.repository.UserRepository
+import com.junenine.mvvmcompose.data.model.SampleResponse
+import com.junenine.mvvmcompose.di.MyApi
+import com.junenine.mvvmcompose.domain.repository.MyRepository
+import com.junenine.mvvmcompose.domain.repository.UserRepository
 import dagger.Lazy
 import dagger.hilt.android.lifecycle.HiltViewModel
 import kotlinx.coroutines.flow.MutableStateFlow

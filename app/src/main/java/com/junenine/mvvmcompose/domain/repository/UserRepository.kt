@@ -1,6 +1,6 @@
-package com.junenine.composeWithMVVM.domain.repository
+package com.junenine.mvvmcompose.domain.repository
 
-import com.junenine.composeWithMVVM.data.model.MathResponse
+import com.junenine.mvvmcompose.data.model.MathResponse
 
 interface UserRepository {
     suspend fun calculate(math: String): MathResponse?

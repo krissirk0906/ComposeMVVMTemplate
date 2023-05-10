@@ -1,4 +1,4 @@
-package com.junenine.composeWithMVVM.ui.base
+package com.junenine.mvvmcompose.ui.base
 
 import androidx.compose.runtime.Composable
 import androidx.compose.runtime.getValue
