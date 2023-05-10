@@ -53,7 +53,6 @@ fun AppTheme(
     } else {
         LightColorPalette
     }
-
     MaterialTheme(
         colors = colors,
         content = content
