@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
-    package="com.juneNine.composeWithMVVM">
+    package="com.junenine.mvvmcompose">
     <uses-permission android:name="android.permission.INTERNET" />
     <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
     <application
-        android:name="com.juneNine.composeWithMVVM.MyApp"
+        android:name="com.junenine.mvvmcompose.MyApp"
         android:allowBackup="true"
         android:dataExtractionRules="@xml/data_extraction_rules"
         android:fullBackupContent="@xml/backup_rules"
@@ -16,7 +16,7 @@
         android:theme="@style/Theme.AndroidHiltApp"
         tools:targetApi="31">
         <activity
-            android:name="com.juneNine.composeWithMVVM.MainActivity"
+            android:name="com.junenine.mvvmcompose.ui.MainActivity"
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />

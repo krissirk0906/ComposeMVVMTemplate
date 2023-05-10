@@ -1,3 +1,12 @@
 <resources>
     <string name="app_name">Compose With MVVM</string>
+    <string name="strTheEmailCanNotBeBlank">strTheEmailCanNotBeBlank</string>
+    <string name="strThatsNotAValidEmail">strThatsNotAValidEmail</string>
+    <string name="strThePasswordNeedsToConsistOfAtLeastEightCharacters">strThePasswordNeedsToConsistOfAtLeastEightCharacters</string>
+    <string name="strThePasswordNeedsToContainAtLeastOneLetterAndDigit">strThePasswordNeedsToContainAtLeastOneLetterAndDigit</string>
+    <string name="strThePhoneCanNotBeBlank">strThePhoneCanNotBeBlank</string>
+    <string name="strThePhoneNumberShouldBeContentJustDigit">strThePhoneNumberShouldBeContentJustDigit</string>
+    <string name="strLogin">strLogin</string>
+    <string name="strPassword">strPassword</string>
+    <string name="strDontHaveAccount">strDontHaveAccount</string>
 </resources>
