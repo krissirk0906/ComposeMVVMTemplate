@@ -1,19 +1,18 @@
-import com.android.build.api.dsl.Packaging
-
 plugins {
     alias(lib.plugins.android.application)
     alias(lib.plugins.kotlin.android)
     alias(lib.plugins.devtools.ksp)
-    alias(lib.plugins.dagger.hilt)
+    alias(lib.plugins.hilt.gradle)
+    id ("kotlin-kapt")
 }
 
 android {
-    namespace = "com.junenine.mvvmcompose"
+    namespace = "com.junenine.composetemplate"
     compileSdk = 34
 
     defaultConfig {
-        applicationId = "com.junenine.mvvmcompose.dev"
-        minSdk = 28
+        applicationId = "com.junenine.composetemplate.dev"
+        minSdk = 24
         targetSdk = 34
         versionCode = 1
         versionName = "1.0"
@@ -62,7 +61,7 @@ dependencies {
     implementation(lib.lifecycle.viewmodel.compose)
     implementation(lib.runtime.livedata)
     implementation (libs.dagger.hilt.android)
-    ksp (libs.dagger.hilt.compiler)
+    kapt (libs.dagger.hilt.compiler)
     implementation(lib.hilt.navigation.compose)
     implementation(lib.retrofit)
     implementation(lib.okhttp)
@@ -78,4 +77,5 @@ dependencies {
     implementation(lib.accompanist.pager)
     implementation(lib.accompanist.pager.indicators)
     implementation(lib.compose.material3)
+    implementation(lib.androidx.startup.runtime)
 }

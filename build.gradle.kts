@@ -13,5 +13,5 @@ plugins {
     alias(lib.plugins.android.library) apply false
     alias(lib.plugins.kotlin.android) apply false
     alias(lib.plugins.devtools.ksp) apply false
-    alias(lib.plugins.dagger.hilt) apply  false
+    alias(lib.plugins.hilt.gradle) apply false
 }

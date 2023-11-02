@@ -20,5 +20,5 @@ dependencyResolutionManagement {
     }
 }
 
-rootProject.name = "Android Compose"
+rootProject.name = "Compose Template"
 include(":app")

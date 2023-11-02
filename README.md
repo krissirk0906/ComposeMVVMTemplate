@@ -1,5 +1,5 @@
 
-<h1 align="center">ComposeMVVMTemplate</h1>
+<h1 align="center">ComposeTemplate</h1>
 <p align="center">  
 A template app using compose and Hilt based on modern Android tech-stacks and MVVM architecture
 </p>
@@ -8,7 +8,6 @@ A template app using compose and Hilt based on modern Android tech-stacks and MV
   <a href="https://opensource.org/licenses/Apache-2.0"><img alt="License" src="https://img.shields.io/badge/License-Apache%202.0-blue.svg"/></a>
   <a href="https://android-arsenal.com/api?level=24"><img alt="API" src="https://img.shields.io/badge/API-21%2B-brightgreen.svg?style=flat"/></a>
   <a href="https://medium.com/@thanhtam961999"><img alt="Medium" src="https://skydoves.github.io/badges/Story-Medium.svg"/></a>
-  <a href="https://github.com/krissirk0906"><img alt="Profile" src="https://avatars.githubusercontent.com/u/58073918?v=4"/></a> 
 </p>
 
 ## Download
