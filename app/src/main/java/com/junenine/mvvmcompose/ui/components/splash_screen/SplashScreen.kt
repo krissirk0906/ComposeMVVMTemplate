@@ -13,7 +13,7 @@ import com.airbnb.lottie.compose.LottieAnimation
 import com.airbnb.lottie.compose.LottieCompositionSpec
 import com.airbnb.lottie.compose.animateLottieCompositionAsState
 import com.airbnb.lottie.compose.rememberLottieComposition
-import com.junenine.mvvmcompose.ui.components.navigation.Screen
+import com.junenine.mvvmcompose.ui.components.Screen
 import com.junenine.mvvmcompose.R
 
 @Composable
@@ -31,19 +31,6 @@ fun SplashScreen(navController: NavHostController) {
             contentScale = ContentScale.Fit,
             progress = { logoAnimationState.progress },
         )
-//        Row(
-//            modifier = Modifier.fillMaxSize(),
-//            verticalAlignment = Alignment.CenterVertically,
-//            horizontalArrangement = Arrangement.Center
-//        ) {
-//            Image(
-//                painter = painterResource(id = R.mipmap.ic_launcher_round),
-//                contentDescription = "AppLogo",
-//                modifier = Modifier
-//                    .width(200.dp)
-//                    .height(200.dp)
-//            )
-//        }
 
         if (logoAnimationState.isAtEnd && logoAnimationState.isPlaying) {
             navController.navigate(Screen.Main.route)

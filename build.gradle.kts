@@ -9,8 +9,9 @@ buildscript {
 }
 
 plugins {
-    alias(myLibs.plugins.android.application) apply false
-    alias(myLibs.plugins.android.library) apply false
-    alias(myLibs.plugins.kotlin.android) apply false
-    alias(myLibs.plugins.devtools.ksp) apply false
+    alias(lib.plugins.android.application) apply false
+    alias(lib.plugins.android.library) apply false
+    alias(lib.plugins.kotlin.android) apply false
+    alias(lib.plugins.devtools.ksp) apply false
+    alias(lib.plugins.dagger.hilt) apply  false
 }

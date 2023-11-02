@@ -1,7 +1,10 @@
+import com.android.build.api.dsl.Packaging
+
 plugins {
-    alias(myLibs.plugins.android.application)
-    alias(myLibs.plugins.kotlin.android)
-    alias(myLibs.plugins.devtools.ksp)
+    alias(lib.plugins.android.application)
+    alias(lib.plugins.kotlin.android)
+    alias(lib.plugins.devtools.ksp)
+    alias(lib.plugins.dagger.hilt)
 }
 
 android {
@@ -41,45 +44,38 @@ android {
     }
 
     composeOptions {
-        kotlinCompilerExtensionVersion = myLibs.versions.compose.compiler.get()
-    }
-
-    packagingOptions {
-        resources {
-            excludes.add("/META-INF/{AL2.0,LGPL2.1}")
-        }
+        kotlinCompilerExtensionVersion = lib.versions.compose.compiler.get()
     }
 }
 
 dependencies {
-    implementation(myLibs.androidx.core.ktx)
-    implementation(myLibs.compose.ui)
-    implementation(myLibs.compose.ui.tooling.preview)
-    implementation(myLibs.lifecycle.runtime.ktx)
-    implementation(myLibs.activity.compose)
-    testImplementation(myLibs.junit)
-    androidTestImplementation(myLibs.test.ext.junit)
-    androidTestImplementation(myLibs.espresso.core)
-    androidTestImplementation(myLibs.ui.test.junit4)
-    debugImplementation(myLibs.ui.tooling)
-    implementation(myLibs.lifecycle.viewmodel.compose)
-    implementation(myLibs.runtime.livedata)
-    implementation(myLibs.dagger.hilt.android)
-    ksp(myLibs.dagger.hilt.compiler)
-    ksp(myLibs.hilt.compiler)
-    implementation(myLibs.hilt.navigation.compose)
-    implementation(myLibs.retrofit)
-    implementation(myLibs.okhttp)
-    implementation(myLibs.converter.gson)
-    implementation(myLibs.logging.interceptor)
-    implementation(myLibs.navigation.compose)
-    implementation(myLibs.lottie.compose)
-    implementation(myLibs.coil.compose)
-    implementation(myLibs.room.runtime)
-    ksp(myLibs.room.compiler)
-    implementation(myLibs.timber)
-    implementation(myLibs.gson)
-    implementation(myLibs.accompanist.pager)
-    implementation(myLibs.accompanist.pager.indicators)
-    implementation(myLibs.compose.material3)
+    implementation(lib.androidx.core.ktx)
+    implementation(lib.compose.ui)
+    implementation(lib.compose.ui.tooling.preview)
+    implementation(lib.lifecycle.runtime.ktx)
+    implementation(lib.activity.compose)
+    testImplementation(lib.junit)
+    androidTestImplementation(lib.test.ext.junit)
+    androidTestImplementation(lib.espresso.core)
+    androidTestImplementation(lib.ui.test.junit4)
+    debugImplementation(lib.ui.tooling)
+    implementation(lib.lifecycle.viewmodel.compose)
+    implementation(lib.runtime.livedata)
+    implementation (libs.dagger.hilt.android)
+    ksp (libs.dagger.hilt.compiler)
+    implementation(lib.hilt.navigation.compose)
+    implementation(lib.retrofit)
+    implementation(lib.okhttp)
+    implementation(lib.converter.gson)
+    implementation(lib.logging.interceptor)
+    implementation(lib.navigation.compose)
+    implementation(lib.lottie.compose)
+    implementation(lib.coil.compose)
+    implementation(lib.room.runtime)
+    ksp(lib.room.compiler)
+    implementation(lib.timber)
+    implementation(lib.gson)
+    implementation(lib.accompanist.pager)
+    implementation(lib.accompanist.pager.indicators)
+    implementation(lib.compose.material3)
 }

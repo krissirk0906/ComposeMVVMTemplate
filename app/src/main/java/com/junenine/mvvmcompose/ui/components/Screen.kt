@@ -1,4 +1,4 @@
-package com.junenine.mvvmcompose.ui.components.navigation
+package com.junenine.mvvmcompose.ui.components
 
 
 sealed class Screen(val route: String,var icon : Int,var title : String){

@@ -4,8 +4,8 @@ import androidx.compose.runtime.Composable
 import androidx.navigation.NavHostController
 import androidx.navigation.compose.NavHost
 import androidx.navigation.compose.composable
+import com.junenine.mvvmcompose.ui.components.Screen
 import com.junenine.mvvmcompose.ui.components.home.HomeScreen
-import com.junenine.mvvmcompose.ui.components.login.LoginScreen
 
 @Composable
 fun HomeNav(navController: NavHostController) {
@@ -15,10 +15,6 @@ fun HomeNav(navController: NavHostController) {
     ) {
         composable(route = Screen.Home.route) {
             HomeScreen(navController = navController)
-        }
-        composable(route = Screen.Login.route )
-        {
-            LoginScreen()
         }
     }
 }

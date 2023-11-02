@@ -4,13 +4,6 @@ pluginManagement {
         google()
         mavenCentral()
     }
-    resolutionStrategy {
-        eachPlugin {
-            if( requested.id.id == "dagger.hilt.android.plugin") {
-                useModule("com.google.dagger:hilt-android-gradle-plugin:2.39.1")
-            }
-        }
-    }
 }
 
 dependencyResolutionManagement {
@@ -21,7 +14,7 @@ dependencyResolutionManagement {
         gradlePluginPortal()
     }
     versionCatalogs {
-        create("myLibs") {
+        create("lib") {
             from(files("./gradle/libs.versions.toml"))
         }
     }
