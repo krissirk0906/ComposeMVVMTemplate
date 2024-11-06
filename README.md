@@ -7,7 +7,7 @@ A template app using compose and Hilt based on modern Android tech-stacks and MV
 <p align="center">
   <a href="https://opensource.org/licenses/Apache-2.0"><img alt="License" src="https://img.shields.io/badge/License-Apache%202.0-blue.svg"/></a>
   <a href="https://android-arsenal.com/api?level=24"><img alt="API" src="https://img.shields.io/badge/API-21%2B-brightgreen.svg?style=flat"/></a>
-  <a href="https://medium.com/@thanhtam961999"><img alt="Medium" src="https://skydoves.github.io/badges/Story-Medium.svg"/></a>
+  <a href="https://medium.com/@thanhtam961999"><img alt="Medium" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR7ac8uICdhp_vgZymQDVW4wJ2b_gWm82aVfQ&s"/></a>
 </p>
 
 ## Download
