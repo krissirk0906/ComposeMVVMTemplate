@@ -8,12 +8,12 @@ plugins {
 
 android {
     namespace = "com.junenine.composetemplate"
-    compileSdk = 34
+    compileSdk = 35
 
     defaultConfig {
         applicationId = "com.junenine.composetemplate.dev"
         minSdk = 24
-        targetSdk = 34
+        targetSdk = 35
         versionCode = 1
         versionName = "1.0"
 
@@ -40,6 +40,7 @@ android {
 
     buildFeatures {
         compose = true
+        buildConfig = true
     }
 
     composeOptions {
@@ -78,4 +79,6 @@ dependencies {
     implementation(lib.accompanist.pager.indicators)
     implementation(lib.compose.material3)
     implementation(lib.androidx.startup.runtime)
+    implementation (libs.utils)
+    implementation (libs.crashcatcher)
 }
