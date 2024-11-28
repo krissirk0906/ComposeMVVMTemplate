@@ -3,7 +3,7 @@ plugins {
     alias(lib.plugins.kotlin.android)
     alias(lib.plugins.devtools.ksp)
     alias(lib.plugins.hilt.gradle)
-    id ("kotlin-kapt")
+    alias(lib.plugins.compose.compiler)
 }
 
 android {
@@ -42,32 +42,29 @@ android {
         compose = true
     }
 
-    composeOptions {
-        kotlinCompilerExtensionVersion = lib.versions.compose.compiler.get()
+    composeCompiler {
+        enableStrongSkippingMode = true
     }
 }
 
 dependencies {
     implementation(lib.androidx.core.ktx)
-    implementation(lib.compose.ui)
+    implementation(lib.androidx.compose.bom)
     implementation(lib.compose.ui.tooling.preview)
     implementation(lib.lifecycle.runtime.ktx)
     implementation(lib.activity.compose)
+    implementation(libs.androidx.navigation.runtime.ktx)
+    implementation(libs.androidx.navigation.compose)
+    implementation(libs.androidx.ui.tooling.preview.android)
     testImplementation(lib.junit)
     androidTestImplementation(lib.test.ext.junit)
     androidTestImplementation(lib.espresso.core)
-    androidTestImplementation(lib.ui.test.junit4)
-    debugImplementation(lib.ui.tooling)
-    implementation(lib.lifecycle.viewmodel.compose)
-    implementation(lib.runtime.livedata)
     implementation (libs.dagger.hilt.android)
-    kapt (libs.dagger.hilt.compiler)
-    implementation(lib.hilt.navigation.compose)
+    ksp (libs.dagger.hilt.compiler)
     implementation(lib.retrofit)
     implementation(lib.okhttp)
     implementation(lib.converter.gson)
     implementation(lib.logging.interceptor)
-    implementation(lib.navigation.compose)
     implementation(lib.lottie.compose)
     implementation(lib.coil.compose)
     implementation(lib.room.runtime)
@@ -76,6 +73,6 @@ dependencies {
     implementation(lib.gson)
     implementation(lib.accompanist.pager)
     implementation(lib.accompanist.pager.indicators)
-    implementation(lib.compose.material3)
     implementation(lib.androidx.startup.runtime)
+    implementation(libs.androidx.material3)
 }
