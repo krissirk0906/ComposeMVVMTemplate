@@ -1,61 +1,48 @@
 [versions]
 core_ktx = "1.12.0"
-compose_ui = "1.5.4"
-compose_compiler = "1.5.3"
-compose_ui_tooling_preview = "1.5.4"
-crashcatcher = "1.0.1"
-lifecycle_runtime_ktx = "2.6.2"
-activity_compose = "1.8.0"
+androidxComposeBom = "2024.11.00"
+compose_ui_tooling_preview = "1.7.5"
+lifecycle_runtime_ktx = "2.8.7"
+activity_compose = "1.9.3"
 junit = "4.13.2"
-startup-runtime = "1.1.1"
+startup-runtime = "1.2.0"
 test_ext_junit = "1.1.5"
 espresso_core = "3.5.1"
-ui_test_junit4 = "1.5.4"
-ui_tooling = "1.5.4"
-lifecycle_viewmodel_compose = "2.6.2"
-runtime_livedata = "1.5.4"
-hilt = "2.46.1"
-hilt_navigation_compose = "1.0.0"
-retrofit = "2.9.0"
+hilt = "2.51.1"
+retrofit = "2.11.0"
 okhttp = "5.0.0-alpha.3"
 converter_gson = "2.9.0"
 logging_interceptor = "5.0.0-alpha.6"
-navigation_compose = "2.7.4"
-lottie_compose = "6.1.0"
+lottie_compose = "6.3.0"
 coil_compose = "2.2.2"
 room_version = "2.6.0"
 timber = "5.0.1"
 gson = "2.10.1"
 accompanist_pager = "0.20.0"
 accompanist_pager_indicators = "0.20.0"
-compose_material3 = "1.1.2"
-agp = "8.1.2"
-kotlin_android = "1.9.10"
-ksp ="1.9.10-1.0.13"
-utils = "1.0.3"
+agp = "8.5.2"
+kotlin_android = "2.0.10"
+ksp ="2.0.10-1.0.24"
+navigationRuntimeKtx = "2.8.4"
+navigationCompose = "2.8.4"
+uiToolingPreviewAndroid = "1.7.5"
 [libraries]
 androidx_core_ktx = { module = "androidx.core:core-ktx", version.ref = "core_ktx" }
-compose_ui = { module = "androidx.compose.ui:ui", version.ref = "compose_ui" }
-compose_ui_tooling_preview = { module = "androidx.compose.ui:ui-tooling-preview", version.ref = "compose_ui_tooling_preview" }
-crashcatcher = { module = "com.github.krissirk0906:CrashCatcher", version.ref = "crashcatcher" }
+androidx-compose-bom = { group = "androidx.compose", name = "compose-bom", version.ref = "androidxComposeBom" }
+androidx-material3 = { group = "androidx.compose.material3", name = "material3" }
 lifecycle_runtime_ktx = { module = "androidx.lifecycle:lifecycle-runtime-ktx", version.ref = "lifecycle_runtime_ktx" }
 activity_compose = { module = "androidx.activity:activity-compose", version.ref = "activity_compose" }
+compose_ui_tooling_preview = { module = "androidx.compose.ui:ui-tooling-preview", version.ref = "compose_ui_tooling_preview" }
 junit = { module = "junit:junit", version.ref = "junit" }
 startup-runtime = { module = "androidx.startup:startup-runtime", version.ref = "startup-runtime" }
 test_ext_junit = { module = "androidx.test.ext:junit", version.ref = "test_ext_junit" }
 espresso_core = { module = "androidx.test.espresso:espresso-core", version.ref = "espresso_core" }
-ui_test_junit4 = { module = "androidx.compose.ui:ui-test-junit4", version.ref = "ui_test_junit4" }
-ui_tooling = { module = "androidx.compose.ui:ui-tooling", version.ref = "ui_tooling" }
-lifecycle_viewmodel_compose = { module = "androidx.lifecycle:lifecycle-viewmodel-compose", version.ref = "lifecycle_viewmodel_compose" }
-runtime_livedata = { module = "androidx.compose.runtime:runtime-livedata", version.ref = "runtime_livedata" }
 dagger_hilt_android = { module = "com.google.dagger:hilt-android", version.ref = "hilt" }
 dagger_hilt_compiler = { module = "com.google.dagger:hilt-android-compiler", version.ref = "hilt" }
-hilt_navigation_compose = { module = "androidx.hilt:hilt-navigation-compose", version.ref = "hilt_navigation_compose" }
 retrofit = { module = "com.squareup.retrofit2:retrofit", version.ref = "retrofit" }
 okhttp = { module = "com.squareup.okhttp3:okhttp", version.ref = "okhttp" }
 converter_gson = { module = "com.squareup.retrofit2:converter-gson", version.ref = "converter_gson" }
 logging_interceptor = { module = "com.squareup.okhttp3:logging-interceptor", version.ref = "logging_interceptor" }
-navigation_compose = { module = "androidx.navigation:navigation-compose", version.ref = "navigation_compose" }
 lottie_compose = { module = "com.airbnb.android:lottie-compose", version.ref = "lottie_compose" }
 coil_compose = { module = "io.coil-kt:coil-compose", version.ref = "coil_compose" }
 room_runtime = { module = "androidx.room:room-runtime", version.ref = "room_version" }
@@ -64,14 +51,16 @@ timber = { module = "com.jakewharton.timber:timber", version.ref = "timber" }
 gson = { module = "com.google.code.gson:gson", version.ref = "gson" }
 accompanist_pager = { module = "com.google.accompanist:accompanist-pager", version.ref = "accompanist_pager" }
 accompanist_pager_indicators = { module = "com.google.accompanist:accompanist-pager-indicators", version.ref = "accompanist_pager_indicators" }
-compose_material3 = { module = "androidx.compose.material3:material3", version.ref = "compose_material3" }
 androidx_startup_runtime = { module = "androidx.startup:startup-runtime", version.ref = "startup_runtime" }
-utils = { module = "com.github.krissirk0906:utils", version.ref = "utils" }
+androidx-navigation-runtime-ktx = { group = "androidx.navigation", name = "navigation-runtime-ktx", version.ref = "navigationRuntimeKtx" }
+androidx-navigation-compose = { group = "androidx.navigation", name = "navigation-compose", version.ref = "navigationCompose" }
+androidx-ui-tooling-preview-android = { group = "androidx.compose.ui", name = "ui-tooling-preview-android", version.ref = "uiToolingPreviewAndroid" }
 [plugins]
 android_application = { id = "com.android.application", version.ref = "agp" }
 android_library = { id = "com.android.library", version.ref = "agp"}
 kotlin_android = { id = "org.jetbrains.kotlin.android", version.ref = "kotlin_android" }
 devtools_ksp = { id = "com.google.devtools.ksp", version.ref = "ksp" }
 hilt-gradle = { id = "com.google.dagger.hilt.android", version.ref = "hilt" }
+compose-compiler = { id = "org.jetbrains.kotlin.plugin.compose", version.ref = "kotlin_android" }
 [bundles]
 
